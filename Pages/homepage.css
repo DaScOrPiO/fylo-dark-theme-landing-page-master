@@ -1,0 +1,558 @@
+.general-container {
+    max-width: 100vw;
+    height: auto;
+    display: grid;
+    position: relative;
+}
+
+.header-container {
+    max-width: 100%;
+    height: 120vh;
+    display: grid;
+    background-color: var(--darkblue2);
+}
+
+.navigation {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    grid-template-rows: 5%;
+    background-color: inherit;
+}
+
+.page-icon {
+    color: var(--white);
+    font-size: 1.5em;
+    width: 100%;
+    padding: 10px;
+}
+
+.navigation .page-icon img {
+    float: left;
+}
+
+.navigation ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.navigation li {
+    float: left;
+}
+
+.navigation li a {
+    display: block;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: var(--white);
+    padding: 10px;
+}
+
+.site-info {
+    width: 100%;
+    height: auto;
+    display: grid;
+    place-content: center;
+    background-color: inherit;
+}
+
+.site-info img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.mobile {
+    width: 50%;
+    height: 95%;
+    background: url(/images/bg-curvy-mobile.svg) no-repeat;
+    background-size: 125% 100%;
+    display: grid;
+    place-self: center;
+    visibility: hidden;
+}
+
+.writing-container {
+    width: 100%;
+    height: 95% !important;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    visibility: visible;
+}
+
+.writing-container h1 {
+    font-size: 2.5em;
+    color: var(--white);
+    text-align: center;
+    word-wrap: break-word;
+    margin-bottom: 2%;
+}
+
+.writing-container P {
+    font-size: 1em;
+    color: var(--white);
+    text-align: center;
+    word-wrap: break-word;
+    margin-top: 0;
+}
+
+.writing-container button {
+    display: flex;
+    align-self: center;
+    background-color: var(--blue);
+    text-align: center;
+    color: var(--white);
+    font-size: 1em;
+    width: 20%;
+    height: 45%;
+    border: 1px solid transparent;
+    border-radius: 100px;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+
+.curvybg {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(autofit, minmax(0, auto));
+    height: auto;
+    background: url(/images/bg-curvy-desktop.svg) no-repeat;
+    background-size: 120% 100%;
+    background-color: var(--darkblue2);
+}
+
+.social-icons-container {
+    display: grid;
+    grid-template-columns: 50% 50% 50% 50%;
+    grid-template-rows: repeat(2, 10fr);
+}
+
+.social-icons1 {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    place-content: center;
+}
+
+.social-icons2 {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    place-content: center;
+}
+
+.social-icons3 {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    place-content: center;
+}
+
+.social-icons4 {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-content: center;
+}
+
+.comment {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.comment h1 {
+    font: 1.2em;
+    color: var(--white);
+}
+
+.comment p {
+    font-size: 1em;
+    color: var(--white);
+}
+
+.half-image-container {
+    width: 100%;
+    height: 35%;
+    background-color: var(--main);
+    text-align: left;
+}
+
+.image {
+    width: 50%;
+    height: auto;
+    float: left;
+}
+
+.container-writing {
+    width: 50%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-writing h1 {
+    font-size: 3.5em;
+    color: var(--white);
+}
+
+.container-writing p {
+    font-size: 1.4em;
+    color: var(--white);
+}
+.container-writing>a {
+    color: var(--blue1);
+    text-decoration: underline;
+}
+.customer-review-container{
+    width: 100%;
+    height: 20%;
+    display: grid;
+    place-content: center;
+    background-color: var(--main);
+}
+.customer-review-container::before{
+    content: url("/images/bg-quotes.png");
+}
+.customer-review-cards-container{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 20%);
+    justify-content: space-around;
+    grid-template-rows: 80%;
+    grid-column-gap: 1em;
+}
+.customer-review-cards{
+    display: grid;
+    grid-template-rows: 100%;
+    justify-content: space-between;
+    align-self: center;
+    background-color: var(--darkblue2);
+    color: var(--white);
+    border: 1px solid var(--darkblue2);
+    border-radius: 5px;
+    box-shadow: 1px 2px 3px 4px var(--main), 1px 2px 3px 4px var(--white);
+    text-align: left;
+}
+.customer-review-cards p{
+    font-size: 1em;
+}
+.profile{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    align-self: baseline;
+    font-size: 0.8em;
+}
+.profile-image{
+    width: 30%;
+    height: 100%;
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
+.profile-image img{
+    max-width: 100%;
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
+.profie-writing{
+    width: 70%;
+    height: 100%;
+}
+.profie-writing h1{
+    font-size: 1.2em;
+}
+.form{
+    width: 50%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-self: baseline;
+    justify-self: center;
+    background-color: var(--darkblue2);
+    box-shadow: 1px 1px 1.5px 2px var(--main), 1px 1px 1.5px 2px var(--white);
+}
+.form-writing-container{
+    width: 100%;
+    height: 60%;
+    text-align: center;
+}
+.form-writing-container h1{
+    font-size: 1.8em;
+    color: var(--white);
+}
+.form-writing-container p{
+    font-size: 1em;
+    color: var(--white);
+}
+.form-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+}
+.form-input-container{
+    width: 100%;
+    height: 40%;
+}
+input[type=email]{
+    width: 60%;
+    height: 50%;
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 8px 16px;
+}
+input[type=email]:focus{
+    outline: none;
+    border: 4px solid var(--blue);
+}
+input[type=submit]{
+    width: 30%;
+    height: 50%;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    color: var(--white);
+    background-color: var(--blue1);
+    padding: 10px;
+    cursor: pointer;
+}
+.footer{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    color: var(--white);
+    background-color: var(--darkblue4);
+    overflow: hidden;
+}
+.contents-container{
+    width: 90%;
+    height: 50%;
+    display: flex;
+}
+.footer-image{
+    width: 30%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.footer-about{
+    word-wrap: break-word;
+}
+.footer-contacts{
+    width: 20%;
+    height: 50%;
+}
+.footer-contacts a{
+    color: var(--white);
+    text-decoration: none;
+}
+.footer-writting{
+    width: 10%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer-writting a{
+    font-size: 1.2em;
+    color: var(--white);
+    text-decoration: none;
+}
+.footer-social-icons{
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    width: 40%;
+}
+.footer-social-icons img{
+    max-width: 25%;
+    height: auto;
+}
+@media screen and (max-width: 767px) {
+    .general-container {
+        width: 100vw;
+        height: auto;
+        background-color: var(--main);
+    }
+
+    .header-container {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .navigation {
+        width: 100%;
+    }
+
+    .page-icon img {
+        width: 50%;
+    }
+
+    .navigation ul {
+        width: 100%;
+    }
+
+    .navigation li a {
+        font-size: 1em;
+    }
+
+    .site-info {
+        width: 100%;
+        height: auto;
+    }
+
+    .curvybg {
+        width: 100%;
+        height: auto !important;
+        display: grid;
+        background-color: var(--main);
+    }
+
+    .writing-container {
+        width: 100%;
+        height: 100% !important;
+    }
+
+    .writing-container h1 {
+        font-size: 1.8em;
+    }
+
+    .writing-container button {
+        width: 60%;
+        font-size: 1.2em;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mobile {
+        width: 100%;
+        height: 100%;
+        visibility: visible;
+        grid-template-rows: 50%;
+    }
+
+    .social-icons-container {
+        grid-template-columns: 100%;
+    }
+
+    .social-icons1 {
+        width: 100%;
+        height: 50%;
+    }
+
+    .social-icons2 {
+        width: 100%;
+        height: 50%;
+    }
+
+    .social-icons3 {
+        width: 100%;
+        height: 50%;
+    }
+
+    .social-icons4 {
+        width: 100%;
+        height: 50%;
+    }
+
+    .comment h1 {
+        font-size: 1.5em;
+    }
+
+    .comment p {
+        font-size: 1em;
+    }
+
+    .image img {
+        max-width: 100%;
+    }
+
+    .half-image-container {
+        width: 100%;
+    }
+
+    .image {
+        width: 100%;
+        height: 30%;
+    }
+
+    .container-writing {
+        width: 100%;
+        height: 70%;
+        margin-top: 20%;
+    }
+
+    .container-writing h1 {
+        font-size: 2.5em;
+    }
+
+    .container-writing p {
+        font-size: 1.8em;
+    }
+    .customer-review-container{
+        width: 100%;
+        height: 20%;
+    }
+    .customer-review-cards-container{
+        grid-template-columns: 60%;
+        grid-template-rows: repeat(2, 1fr);
+        place-content: center;
+        justify-content: space-around;
+        grid-gap: 1em;
+    }
+    .customer-review-cards{
+        width: 100%;
+    }
+    .form{
+        width: 90%;
+        justify-self: space-between;
+    }
+    .footer{
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 20%;
+    }
+    .contents-container{
+        flex-direction: column;
+    }
+    .footer-image{
+        width: 100%;
+        height: 80%;
+    }
+    .footer-about{
+        width: 100%;
+        height: auto;
+    }
+    .footer-contacts{
+        width: 100%;
+        height: auto;
+    }
+    .footer-writting{
+        width: 100%;
+        height: auto;
+    }
+    .footer-social-icons{
+        width: 100%;
+        height: auto;
+    }
+}

@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: auto;
+}
+
+:root {
+    --white: #e2ecf0;
+    --blue: #09afd8;
+    --blue2: hsl(198, 60%, 50%);
+    --blue1: hsl(176, 68%, 64%);
+    --darkblue: hsl(218, 28%, 13%);
+    --darkblue2: hsl(219, 30%, 18%);
+    --darkblue3: hsl(217, 28%, 15%);
+    --darkblue4: hsl(216, 53%, 9%);
+    --main: hsl(217.89,28.36%,13.14%);
+}
